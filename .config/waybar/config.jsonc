@@ -1,0 +1,145 @@
+{
+  "layer": "top",
+  "position": "top",
+  "mod": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "height": 0,
+	
+  "modules-left": [
+    "custom/launcher", 
+    //"custom/power",
+    "clock",
+    "custom/media", 
+    "custom/updates", 
+    "tray"
+  ],
+	
+  "modules-center": ["hyprland/window"],
+
+	"modules-right": [
+    "cpu",
+    "network",
+    "backlight",
+    "pulseaudio",
+    //"clock",
+    "battery"
+  ],
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": "󰖁 Muted",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+
+    "river/tags": {
+		"num-tags": 6
+    },
+
+  "hyprland/window": {
+    "format": "{title}"
+  },
+  
+  "wlr/workspaces": {
+    "format": "{icon}",
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate",
+    "persistent_workspaces": {
+          "1": [],
+          "2": [],
+          "3": [],
+          "4": [],
+          "5": [],
+          "6": [],
+          "7": [],
+          "8": [],
+          "9": [],
+          "10": []
+        }
+  },
+
+  "network": {
+		"tooltip": true,
+		"format-wifi": "  {signalStrength}",
+		"format-ethernet": "",
+    "format-disconnected": "󰖪 ",
+    "tooltip-format": "{essid}, 󰕒 {bandwidthUpBytes}, 󰇚 {bandwidthDownBytes}"
+	},
+	"backlight": {
+		"tooltip": false,
+		"format": " {}%",
+		"interval":1,
+        "on-scroll-up": "brightnessctl set 1%+",
+		"on-scroll-down": "brightnessctl set 1%-"
+	},
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+    "clock": {
+        "format": "{: %R}",
+        "tooltip-format": "{:    %d/%m/%Y}"
+    },
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "custom/media": {
+        "interval": 30,
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 20,
+        "format-icons": {
+            "spotify": " ",
+            "default": " "
+        },
+        "escape": true,
+        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause"
+    },
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "wofi --show drun",
+        "on-click-right": "killall rofi"
+    },
+    "custom/power":{
+        "format": " ",
+        "on-click": "wlogout"
+    },
+    "custom/updates":{
+        "format": "󰚰 {}",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "interval": 15,
+        "on-click": "kitty -e yay && notify-send 'The system has been updated' "
+    },
+    "custom/wallpaper":{
+        "format":" ",
+        "on-click": "bash ~/.config/system_scripts/pkill_bc"
+    }
+}
