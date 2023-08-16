@@ -8,7 +8,7 @@ files=("$wallpaper_dir"/*)
 
 # Variable to store the last used wallpaper filename
 last_wallpaper=""
-state_file="$HOME/.config/hypr/state_file.txt"
+state_file="$HOME/.config/hypr/scripts/state_file.txt"
 
 # Function to get a random wallpaper filename that is different from the last one
 get_random_wallpaper() {
