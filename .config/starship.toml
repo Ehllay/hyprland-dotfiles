@@ -1,0 +1,72 @@
+add_newline = false
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$character\
+"""
+
+right_format = """
+$git_metrics\
+$nodejs\
+$cmd_duration $jobs\
+"""
+
+[username]
+style_user = 'purple'
+show_always = true
+format = '[$user]($style)@'
+
+[hostname]
+ssh_only = false
+format = '[$ssh_symbol$hostname]($style) '
+style='bold purple'
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+
+[fill]
+symbol = " "
+
+[directory]
+style = "blue"
+read_only = "󰌾"
+truncation_length = 4
+truncate_to_repo = false
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](green)"
+
+[git_branch]
+symbol = " "
+format = "[$symbol$branch]($style) "
+style = "bright-black"
+
+[jobs]
+symbol = ""
+style = "bold red"
+number_threshold = 1
+format = "[$symbol]($style)"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "cyan"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
+[git_metrics]
+disabled = false
+
+[cmd_duration]
+style = "yellow"
+
+[rust]
+symbol = " "
