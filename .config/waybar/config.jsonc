@@ -97,7 +97,7 @@
 	},
     "clock": {
         "format": "{: %R}",
-        "tooltip-format": "{:    %d/%m/%Y}"
+        "tooltip-format": "{:%c}"
     },
     "cpu": {
         "interval": 15,
