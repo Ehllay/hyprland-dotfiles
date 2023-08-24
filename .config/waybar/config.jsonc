@@ -124,7 +124,7 @@
     },
     "custom/launcher":{
         "format": " ",
-        "on-click": "wofi --show drun",
+        "on-click": "rofi -combi-modi drun,window,filebrowser,run -show combi",
         "on-click-right": "killall rofi"
     },
     "custom/power":{
@@ -137,9 +137,5 @@
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 15,
         "on-click": "kitty -e yay && notify-send 'The system has been updated' "
-    },
-    "custom/wallpaper":{
-        "format":" ",
-        "on-click": "bash ~/.config/system_scripts/pkill_bc"
     }
 }

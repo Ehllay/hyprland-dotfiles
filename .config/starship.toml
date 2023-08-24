@@ -39,7 +39,7 @@ truncation_length = 4
 truncate_to_repo = false
 
 [character]
-success_symbol = "[❯](purple)"
+success_symbol = "[❯](cyan)"
 error_symbol = "[❯](red)"
 vicmd_symbol = "[❮](green)"
 
