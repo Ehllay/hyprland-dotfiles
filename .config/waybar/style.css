@@ -132,11 +132,12 @@ tooltip {
 
 #pulseaudio {
 	margin-top: 6px;
-	margin-left: 0px;
-	padding-left: 7px;
+	margin-left: 8px;
+  margin-right: 10px;
+	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom: 0px;
-	border-radius: 0 10px 10px 0;
+	border-radius: 10px 10px;
 	transition: none;
 	color: @pink;
 	background: @background;
@@ -243,7 +244,7 @@ tooltip {
 #custom-launcher {
 	font-size: 24px;
 	margin-top: 6px;
-	margin-left: 8px;
+	margin-left: 10px;
 	padding-left: 10px;
 	padding-right: 5px;
 	border-radius: 10px;

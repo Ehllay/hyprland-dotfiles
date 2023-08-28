@@ -33,6 +33,7 @@ format = "[$symbol($version )]($style)"
 symbol = " "
 
 [directory]
+format = '[$path]($style) [$read_only]($read_only_style) '
 style = "blue"
 read_only = "󰌾"
 truncation_length = 4
