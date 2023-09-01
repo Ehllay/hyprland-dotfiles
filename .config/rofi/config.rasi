@@ -15,9 +15,10 @@
 }
 
 configuration {
-    modes:                      [drun,combi];
+    modes:                      [drun,emoji,combi];
     modi:                       "drun";
     display-combi:              "";
+    display-emoji:              "Emojis ";
     show-icons:                 true;
     icon-theme:                 "Papirus-Dark";
     application-fallback-icon:  "Dracula";

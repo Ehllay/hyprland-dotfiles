@@ -30,7 +30,7 @@ get_random_wallpaper() {
 # Function to set the wallpaper
 set_wallpaper() {
     local wallpaper="$1"
-    swww img $wallpaper --transition-type wipe
+    swww img $wallpaper --transition-type wipe --transition-fps 120
 }
 
 # Call the set_wallpaper function with a random wallpaper
