@@ -19,11 +19,11 @@
   "modules-center": ["hyprland/window"],
 
 	"modules-right": [
-    "cpu",
+    //"cpu",
     "network",
     "backlight",
     "pulseaudio",
-    //"clock",
+    //"pulseaudio#microphone",
     "battery"
   ],
 	
@@ -37,6 +37,15 @@
 			"default": ["", "", ""]
 		}
 	},
+  "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    },
 
     "river/tags": {
 		"num-tags": 6
