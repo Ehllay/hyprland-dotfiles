@@ -9,8 +9,8 @@
 	
   "modules-left": [
     "custom/launcher", 
+    "hyprland/workspaces",
     //"custom/power",
-    "clock",
     "custom/media", 
     "custom/updates", 
     "tray"
@@ -22,30 +22,27 @@
     "memory",
     "cpu",
     "network",
-    "pulseaudio"
+    "pulseaudio",
+    "clock"
   ],
 	
 	"pulseaudio": {
 		"tooltip": false,
 		"scroll-step": 5,
 		"format": "{icon} {volume}%",
-		"format-muted": "󰖁 Muted",
+		"format-muted": "󰖁 {volume}%",
 		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"format-icons": {
 			"default": ["", "", ""]
 		}
 	},
 
-    "river/tags": {
-		"num-tags": 6
-    },
-
   "hyprland/window": {
     "format": "{title}"
   },
   
-  "wlr/workspaces": {
-    "format": "{icon}",
+  "hyprland/workspaces": {
+    "format": "{name}",
     "disable-scroll": true,
     "all-outputs": true,
     "on-click": "activate",
