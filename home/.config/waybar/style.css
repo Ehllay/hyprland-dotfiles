@@ -43,7 +43,7 @@ tooltip {
 
 #workspaces button {
     padding: 5px;
-    color: @selection;
+    color: @surface1;
     margin-right: 5px;
 }
 
@@ -54,19 +54,16 @@ tooltip {
 #workspaces button.focused {
     color: @purple;
     background: @pink;
-    border-radius: 10px;
 }
 
 #workspaces button.urgent {
     color: @background;
     background: @green;
-    border-radius: 10px;
 }
 
 #workspaces button:hover {
     background: @background;
     color: @cyan;
-    border-radius: 10px;
 }
 #workspaces {
   margin-top: 6px;
@@ -84,7 +81,7 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @selection;
+	color: @surface1;
 	background: @purple;
 }
 
@@ -114,13 +111,13 @@ tooltip {
 }
 
 #battery.charging, #battery.plugged {
-	color: @selection;
+	color: @surface1;
     color: @green
 }
 
 #battery.critical:not(.charging) {
     color: @red;
-    color: @selection;
+    color: @surface1;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -167,7 +164,7 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: @selection;
+	color: @surface1;
 	background: @purple;
 }
 #cpu {
@@ -178,7 +175,7 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: @selection;
+	color: @surface1;
 	background: @cyan;
 }
 
@@ -190,7 +187,7 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: @comment;
+	color: @blue;
 	background: @background;
 }
 
@@ -223,8 +220,8 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @selection;
-	background: @comment;
+	color: @surface1;
+	background: @blue;
 }
 
 #custom-updates {
@@ -235,7 +232,7 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @selection;
+	color: @surface1;
 	background: @red;
 }
 
@@ -247,6 +244,6 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @selection;
+	color: @surface1;
 	background: @green;
 }
