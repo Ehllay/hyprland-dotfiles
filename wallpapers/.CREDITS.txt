@@ -1,0 +1,5 @@
+windwaker, tetris, mandelbrot -> From: https://github.com/zhichaoh/catppuccin-wallpapers (lutgened with dracula)
+arch, dracula-waves-44475a -> From: https://github.com/dracula/wallpaper
+archlinux -> From: https://github.com/aynp/dracula-wallpapers
+
+totk -> By me! :) (Logo by Nintendo)
