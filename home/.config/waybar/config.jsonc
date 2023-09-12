@@ -22,10 +22,11 @@
     "memory",
     "cpu",
     "network",
+    "cava",
     "pulseaudio",
     "clock"
   ],
-	
+
 	"pulseaudio": {
 		"tooltip": false,
 		"scroll-step": 5,
