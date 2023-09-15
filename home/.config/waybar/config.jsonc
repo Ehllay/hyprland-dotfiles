@@ -22,7 +22,6 @@
     "memory",
     "cpu",
     "network",
-    "cava",
     "pulseaudio",
     "clock"
   ],

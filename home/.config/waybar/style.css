@@ -36,6 +36,10 @@ tooltip {
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
+  border-bottom-width: 2px;
+  border-bottom-color: @surface1;
+  border-bottom-style: solid;
+
 	transition: none;
     color: @cyan;
 	background: @background;
@@ -48,6 +52,12 @@ tooltip {
 }
 
 #workspaces button.active {
+    border-radius: 5px;
+    border-bottom-width: 2px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-color: @blue;
+    border-bottom-style: solid;
     color: @white;
 }
 
@@ -70,6 +80,10 @@ tooltip {
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
+  border-bottom-width: 2px;
+  border-bottom-color: @surface1;
+  border-bottom-style: solid;
+
   background: @background;
 }
 
@@ -93,6 +107,10 @@ tooltip {
 	padding-right: 10px;
 	margin-bottom: 0px;
 	border-radius: 10px 0 0 10px;
+  border-bottom-width: 2px;
+  border-bottom-color: @surface1;
+  border-bottom-style: solid;
+
 	transition: none;
 	color: @pink;
 	background: @background;
@@ -151,6 +169,10 @@ tooltip {
 	padding-right: 10px;
 	margin-bottom: 0px;
 	border-radius: 0 10px 10px 0;
+  border-bottom-width: 2px;
+  border-bottom-color: @surface1;
+  border-bottom-style: solid;
+
 	transition: none;
 	color: @green;
 	background: @background;
@@ -186,6 +208,10 @@ tooltip {
 	margin-bottom: 0px;
 	padding-right: 10px;
 	border-radius: 10px;
+  border-bottom-width: 2px;
+  border-bottom-color: @surface1;
+  border-bottom-style: solid;
+
 	transition: none;
 	color: @blue;
 	background: @background;
@@ -205,6 +231,10 @@ tooltip {
 	padding-left: 10px;
 	padding-right: 5px;
 	border-radius: 10px;
+  border-bottom-width: 2px;
+  border-bottom-color: @surface1;
+  border-bottom-style: solid;
+
 	transition: none;
     color: @purple;
     background: @background;
