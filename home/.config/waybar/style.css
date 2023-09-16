@@ -48,7 +48,6 @@ tooltip {
 #workspaces button {
     padding: 5px;
     color: @surface1;
-    margin-right: 5px;
 }
 
 #workspaces button.active {
