@@ -1,4 +1,5 @@
-@import url("./colors.css");
+@import url("./../../.cache/wal/colors-waybar.css");
+/*@import url ("./colors.css");*/
 * {
 	border: none;
 	border-radius: 0;
@@ -10,7 +11,7 @@
 
 window#waybar {
 	background: transparent;
-  color: @cyan;
+  color: @color6;
 }
 
 window#waybar.empty #window {
@@ -27,7 +28,7 @@ tooltip {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: @purple;
+    border-color: @color4;
 }
 
 #window {
@@ -37,17 +38,17 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
   border-bottom-width: 2px;
-  border-bottom-color: @surface1;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
 	transition: none;
-    color: @cyan;
+    color: @color6;
 	background: @background;
 }
 
 #workspaces button {
     padding: 5px;
-    color: @surface1;
+    color: @color8;
 }
 
 #workspaces button.active {
@@ -55,24 +56,24 @@ tooltip {
     border-bottom-width: 2px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-bottom-color: @blue;
+    border-bottom-color: @color8;
     border-bottom-style: solid;
-    color: @white;
+    color: @foreground;
 }
 
 #workspaces button.focused {
-    color: @purple;
-    background: @pink;
+    color: @color5;
+    background: @color1;
 }
 
 #workspaces button.urgent {
     color: @background;
-    background: @green;
+    background: @color2;
 }
 
 #workspaces button:hover {
     background: @background;
-    color: @cyan;
+    color: @color6;
 }
 #workspaces {
   margin-top: 6px;
@@ -80,7 +81,7 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
   border-bottom-width: 2px;
-  border-bottom-color: @surface1;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
   background: @background;
@@ -94,8 +95,8 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @surface1;
-	background: @purple;
+	color: @color14;
+	background: @background;
 }
 
 #pulseaudio {
@@ -107,11 +108,11 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px 0 0 10px;
   border-bottom-width: 2px;
-  border-bottom-color: @surface1;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
 	transition: none;
-	color: @pink;
+	color: @color5;
 	background: @background;
 }
 
@@ -123,18 +124,18 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @cyan;
+	color: @color6;
 	background: @background;
 }
 
 #battery.charging, #battery.plugged {
-	color: @surface1;
-    color: @green
+	color: @color8;
+    color: @color10
 }
 
 #battery.critical:not(.charging) {
-    color: @red;
-    color: @surface1;
+    color: @color9;
+    color: @color15;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -144,8 +145,8 @@ tooltip {
 
 @keyframes blink {
     to {
-        background-color: @red;
-        color: @orange;
+        background-color: @color13;
+        color: @color11;
     }
 }
 
@@ -157,7 +158,7 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px 0 0 10px;
 	transition: none;
-	color: @orange;
+	color: @color11;
 	background: @background;
 }
 #clock {
@@ -169,11 +170,11 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 0 10px 10px 0;
   border-bottom-width: 2px;
-  border-bottom-color: @surface1;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
 	transition: none;
-	color: @green;
+	color: @color2;
 	background: @background;
 }
 
@@ -185,8 +186,8 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: @surface1;
-	background: @purple;
+	color: @color8;
+	background: @color13;
 }
 #cpu {
 	margin-top: 6px;
@@ -196,8 +197,8 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: @surface1;
-	background: @cyan;
+	color: @color8;
+	background: @color14;
 }
 
 #tray {
@@ -208,11 +209,11 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
   border-bottom-width: 2px;
-  border-bottom-color: @surface1;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
 	transition: none;
-	color: @blue;
+	color: @color4;
 	background: @background;
 }
 
@@ -231,11 +232,11 @@ tooltip {
 	padding-right: 5px;
 	border-radius: 10px;
   border-bottom-width: 2px;
-  border-bottom-color: @surface1;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
 	transition: none;
-    color: @purple;
+    color: @color4;
     background: @background;
 }
 
@@ -249,8 +250,8 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @surface1;
-	background: @blue;
+	color: @color8;
+	background: @color12;
 }
 
 #custom-updates {
@@ -261,8 +262,8 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @surface1;
-	background: @red;
+	color: @color8;
+	background: @color13;
 }
 
 #custom-media {
@@ -273,6 +274,6 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @surface1;
-	background: @green;
+	color: @color8;
+	background: @color10;
 }
