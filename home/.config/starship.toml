@@ -4,6 +4,8 @@ format = """
 $username\
 $hostname\
 $directory\
+$rust\
+$python\
 $git_branch\
 $git_state\
 $git_status\
@@ -19,12 +21,12 @@ $cmd_duration $jobs\
 [username]
 style_user = 'purple'
 show_always = true
-format = '[$user]($style)@'
+format = '[$user]($style)'
 
 [hostname]
 ssh_only = false
-format = '[$ssh_symbol$hostname]($style) '
-style='bold purple'
+format = '@[$ssh_symbol$hostname]($style) '
+style='purple'
 
 [nodejs]
 format = "[$symbol($version )]($style)"
@@ -33,15 +35,21 @@ format = "[$symbol($version )]($style)"
 symbol = " "
 
 [directory]
+format = '[$path]($style) [$read_only]($read_only_style)'
 style = "blue"
 read_only = "󰌾"
-truncation_length = 4
-truncate_to_repo = false
+truncation_length = 3
+truncate_to_repo = true
 
 [character]
 success_symbol = "[❯](cyan)"
 error_symbol = "[❯](red)"
 vicmd_symbol = "[❮](green)"
+
+
+[python]
+symbol = '󰌠 '
+format = '[${symbol}(\($virtualenv\) )]($style)'
 
 [git_branch]
 symbol = " "
@@ -69,4 +77,5 @@ disabled = false
 style = "yellow"
 
 [rust]
-symbol = " "
+symbol = "󱘗 "
+format = '[$symbol]($style) '

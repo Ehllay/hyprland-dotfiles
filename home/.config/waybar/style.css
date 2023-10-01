@@ -1,4 +1,5 @@
-@import url("./colors.css");
+@import url("./../../.cache/wal/colors-waybar.css");
+/*@import url ("./colors.css");*/
 * {
 	border: none;
 	border-radius: 0;
@@ -10,7 +11,7 @@
 
 window#waybar {
 	background: transparent;
-  color: @cyan;
+  color: @color6;
 }
 
 window#waybar.empty #window {
@@ -27,95 +28,63 @@ tooltip {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: @purple;
+    border-color: @color4;
 }
 
 #window {
 	margin-top: 6px;
+  margin-right: 6px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
+  border-bottom-width: 2px;
+  border-bottom-color: @color8;
+  border-bottom-style: solid;
+
 	transition: none;
-    color: @cyan;
+    color: @color6;
 	background: @background;
 }
 
 #workspaces button {
     padding: 5px;
-    color: @background;
-    margin-right: 5px;
+    color: @color8;
 }
 
 #workspaces button.active {
-    color: @purple;
+    border-radius: 5px;
+    border-bottom-width: 2px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-color: @color12;
+    border-bottom-style: solid;
+    color: @foreground;
 }
 
 #workspaces button.focused {
-    color: @purple;
-    background: @pink;
-    border-radius: 10px;
+    color: @color5;
+    background: @color1;
 }
 
 #workspaces button.urgent {
     color: @background;
-    background: @green;
-    border-radius: 10px;
+    background: @color2;
 }
 
 #workspaces button:hover {
     background: @background;
-    color: @cyan;
-    border-radius: 10px;
+    color: @color6;
 }
 #workspaces {
-  background: @background;
-  padding: 2px 10px;
-  margin: 3px 0px;
-  margin-top: 10px;
-}
-
-#tags {
-	margin-top: 6px;
-	margin-left: 12px;
-	font-size: 4px;
-	margin-bottom: 0px;
+  margin-top: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-radius: 10px;
-	background: #161320;
-	transition: none;
-}
+  border-bottom-width: 2px;
+  border-bottom-color: @color8;
+  border-bottom-style: solid;
 
-#tags button {
-	transition: none;
-	color: #B5E8E0;
-	background: transparent;
-	font-size: 16px;
-	border-radius: 2px;
-}
-
-#tags button.occupied {
-	transition: none;
-	color: #F28FAD;
-	background: transparent;
-	font-size: 4px;
-}
-
-#tags button.focused {
-	color: #ABE9B3;
-    border-top: 2px solid #ABE9B3;
-    border-bottom: 2px solid #ABE9B3;
-}
-
-#tags button:hover {
-	transition: none;
-	box-shadow: inherit;
-	text-shadow: inherit;
-	color: #FAE3B0;
-    border-color: #E8A2AF;
-    color: #E8A2AF;
-}
-
-#tags button.focused:hover {
-    color: #E8A2AF;
+  background: @background;
 }
 
 #network {
@@ -124,53 +93,63 @@ tooltip {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom: 0px;
-	border-radius: 10px;
+	border-radius: 10px 0 0 10px;
+  border-bottom-width: 2px;
+  border-bottom-color: @color8;
+  border-bottom-style: solid;
 	transition: none;
-	color: @selection;
-	background: @purple;
+	color: @color14;
+	background: @background;
 }
 
 #pulseaudio {
 	margin-top: 6px;
-	margin-left: 0px;
-	padding-left: 7px;
+  margin-right: 0px;
+	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom: 0px;
-	border-radius: 0 10px 10px 0;
+	border-radius: 0px;
+  border-bottom-width: 2px;
+  border-bottom-color: @color8;
+  border-bottom-style: solid;
+
 	transition: none;
-	color: @pink;
+	color: @color1;
 	background: @background;
 }
 #pulseaudio.microphone {
-    color: @yellow;
+    color: @color3;
     background: @background;
-    border-radius: 10px;
+    border-radius: 0px;
     border-left: 0px;
     border-right: 0px;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 
 #battery {
 	margin-top: 6px;
-	margin-left: 5px;
-  margin-right: 5px;
+	margin-left: 8px;
+	margin-right: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @cyan;
+	color: @color6;
 	background: @background;
+  border-bottom-width: 2px;
+  border-bottom-color: @color8;
+  border-bottom-style: solid;
 }
 
 #battery.charging, #battery.plugged {
-	color: @selection;
-    color: @green
+	color: @color8;
+    color: @color10
 }
 
 #battery.critical:not(.charging) {
-    color: @red;
-    color: @selection;
+    background: @color9;
+    color: @color15;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -180,31 +159,37 @@ tooltip {
 
 @keyframes blink {
     to {
-        background-color: @red;
-        color: @orange;
+        background-color: @color13;
+        color: @color11;
     }
 }
 
 #backlight {
 	margin-top: 6px;
-	margin-left: 8px;
+	margin-left: 0px;
 	padding-left: 10px;
 	padding-right: 7px;
 	margin-bottom: 0px;
-	border-radius: 10px 0 0 10px;
 	transition: none;
-	color: @orange;
+	color: @color11;
 	background: @background;
+  border-bottom-width: 2px;
+  border-bottom-color: @color8;
+  border-bottom-style: solid;
 }
 #clock {
 	margin-top: 6px;
-	margin-left: 8px;
-	padding-left: 10px;
+	margin-left: 0px;
+	padding-left: 8px;
 	padding-right: 10px;
 	margin-bottom: 0px;
-	border-radius: 10px;
+	border-radius: 0 10px 10px 0;
+  border-bottom-width: 2px;
+  border-bottom-color: @color8;
+  border-bottom-style: solid;
+
 	transition: none;
-	color: @green;
+	color: @color5;
 	background: @background;
 }
 
@@ -216,8 +201,8 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: @selection;
-	background: @purple;
+	color: @color8;
+	background: @color5;
 }
 #cpu {
 	margin-top: 6px;
@@ -227,8 +212,8 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: @selection;
-	background: @cyan;
+	color: @color8;
+	background: @color14;
 }
 
 #tray {
@@ -238,8 +223,12 @@ tooltip {
 	margin-bottom: 0px;
 	padding-right: 10px;
 	border-radius: 10px;
+  border-bottom-width: 2px;
+  border-bottom-color: @color8;
+  border-bottom-style: solid;
+
 	transition: none;
-	color: @comment;
+	color: @color4;
 	background: @background;
 }
 
@@ -252,12 +241,17 @@ tooltip {
 #custom-launcher {
 	font-size: 24px;
 	margin-top: 6px;
-	margin-left: 8px;
+	margin-left: 10px;
+  margin-right: 8px;
 	padding-left: 10px;
 	padding-right: 5px;
 	border-radius: 10px;
+  border-bottom-width: 2px;
+  border-bottom-color: @color8;
+  border-bottom-style: solid;
+
 	transition: none;
-    color: @purple;
+    color: @color5;
     background: @background;
 }
 
@@ -271,20 +265,8 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @selection;
-	background: @comment;
-}
-
-#custom-wallpaper {
-	margin-top: 6px;
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 10px;
-	transition: none;
-	color: #161320;
-	background: #C9CBFF;
+	color: @color8;
+	background: @color12;
 }
 
 #custom-updates {
@@ -295,8 +277,8 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @selection;
-	background: @red;
+	color: @color8;
+	background: @color13;
 }
 
 #custom-media {
@@ -307,6 +289,6 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @selection;
-	background: @green;
+	color: @color8;
+	background: @color10;
 }

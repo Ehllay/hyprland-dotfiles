@@ -8,7 +8,7 @@ files=("$wallpaper_dir"/*)
 
 # Variable to store the last used wallpaper filename
 last_wallpaper=""
-state_file="$HOME/.config/hypr/scripts/state_file.txt"
+state_file="$HOME/.local/state/wallpaper_state.txt"
 
 # Function to get a random wallpaper filename that is different from the last one
 get_random_wallpaper() {
@@ -30,7 +30,10 @@ get_random_wallpaper() {
 # Function to set the wallpaper
 set_wallpaper() {
     local wallpaper="$1"
-    swww img $wallpaper --transition-type wipe
+    swww img $wallpaper --transition-type wipe --transition-fps 60
+    wal --backend haishoku -i $wallpaper
+    killall waybar && waybar &
+    pywalfox update
 }
 
 # Call the set_wallpaper function with a random wallpaper

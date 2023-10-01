@@ -1,8 +1,8 @@
 @import url("./colors.css");
 window {
-    font-family: FreeSans;
+    font-family: Noto Sans;
     font-size: 14pt;
-    color: @cyan; /* text */
+    
     background-color: rgba(30, 30, 46, 0.5);
 }
 
@@ -15,6 +15,7 @@ button {
     background-color: transparent;
     background-size: 20%;
     box-shadow: none;
+    color: @text; /* text */
     text-shadow: none;
       animation: gradient_f 20s ease-in infinite;
     margin: 5px;
@@ -31,7 +32,7 @@ button:hover {
 button:focus {
     background-size: 25%;
     background-color: @purple;
-    color: @selection;
+    color: @surface1;
 }
 
 #lock {
