@@ -1,0 +1,15 @@
+* {{
+    foreground: {foreground};
+    background-color: {background};
+    active-background: {color4};
+    active-foreground: @background-color;
+    urgent-background: {color15};
+    urgent-foreground: @foreground;
+    selected-background: @active-background;
+    selected-foreground: @background-color;
+    selected-urgent-background: @urgent-background;
+    selected-active-background: @active-background;
+    selected-active-foreground: @active-foreground;
+    separatorcolor: @active-background;
+    bordercolor: @active-background;
+}}

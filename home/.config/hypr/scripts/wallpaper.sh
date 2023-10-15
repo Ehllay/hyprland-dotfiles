@@ -1,7 +1,19 @@
 #!/bin/bash
 
 # Directory where your wallpapers are stored
-wallpaper_dir="$HOME/Pictures/wallpapers"
+
+theme_state="$HOME/.local/state/theme_state.txt"
+
+if grep -q Dracula $theme_state; then
+  wallpaper_dir="$HOME/Pictures/wallpapers/Dracula"
+
+elif grep -q Mocha $theme_state; then
+  wallpaper_dir="$HOME/Pictures/wallpapers/Mocha"
+
+else 
+  wallpaper_dir="$HOME/Pictures/wallpapers/Other"
+fi
+
 
 # Get a list of all wallpaper files in the directory
 files=("$wallpaper_dir"/*)
@@ -30,10 +42,11 @@ get_random_wallpaper() {
 # Function to set the wallpaper
 set_wallpaper() {
     local wallpaper="$1"
-    swww img $wallpaper --transition-type wipe --transition-fps 60
-    wal --backend haishoku -i $wallpaper
-    killall waybar && waybar &
-    pywalfox update
+    if grep -q Wallpaper ~/.local/state/theme_state.txt; then
+      wal -i $wallpaper --saturate 0.75 --backend haishoku 
+      ~/.config/hypr/scripts/applytheme.sh
+    fi
+    swww img $wallpaper --transition-type wipe --transition-fps 120
 }
 
 # Call the set_wallpaper function with a random wallpaper

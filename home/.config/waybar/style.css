@@ -25,7 +25,7 @@ window#waybar.hidden {
 
 tooltip {
     background: @background;
-    border-radius: 10px;
+    border-radius: 5px;
     border-width: 2px;
     border-style: solid;
     border-color: @color4;
@@ -38,7 +38,7 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
   border-bottom-width: 2px;
-  border-bottom-color: @color8;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
 	transition: none;
@@ -56,7 +56,7 @@ tooltip {
     border-bottom-width: 2px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-bottom-color: @color12;
+    border-bottom-color: @color8;
     border-bottom-style: solid;
     color: @foreground;
 }
@@ -81,7 +81,7 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
   border-bottom-width: 2px;
-  border-bottom-color: @color8;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
   background: @background;
@@ -95,7 +95,7 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px 0 0 10px;
   border-bottom-width: 2px;
-  border-bottom-color: @color8;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 	transition: none;
 	color: @color14;
@@ -110,11 +110,11 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 0px;
   border-bottom-width: 2px;
-  border-bottom-color: @color8;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
 	transition: none;
-	color: @color1;
+	color: @color5;
 	background: @background;
 }
 #pulseaudio.microphone {
@@ -138,7 +138,7 @@ tooltip {
 	color: @color6;
 	background: @background;
   border-bottom-width: 2px;
-  border-bottom-color: @color8;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 }
 
@@ -174,7 +174,7 @@ tooltip {
 	color: @color11;
 	background: @background;
   border-bottom-width: 2px;
-  border-bottom-color: @color8;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 }
 #clock {
@@ -185,11 +185,11 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 0 10px 10px 0;
   border-bottom-width: 2px;
-  border-bottom-color: @color8;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
 	transition: none;
-	color: @color5;
+	color: @color2;
 	background: @background;
 }
 
@@ -224,7 +224,7 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
   border-bottom-width: 2px;
-  border-bottom-color: @color8;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
 	transition: none;
@@ -247,11 +247,11 @@ tooltip {
 	padding-right: 5px;
 	border-radius: 10px;
   border-bottom-width: 2px;
-  border-bottom-color: @color8;
+  border-bottom-color: @color0;
   border-bottom-style: solid;
 
 	transition: none;
-    color: @color5;
+    color: @color4;
     background: @background;
 }
 
