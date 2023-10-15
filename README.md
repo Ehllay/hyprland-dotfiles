@@ -13,3 +13,8 @@ hyprland-nvidia kitty papirus-icon-theme brightnessctl pipewire dracula-theme do
 For GTK apps, it should work out of the box.
 
 For QT5, if the custom theme isn't working, open qt5ct and set the color scheme to Dracula (or Dracula-white for white text), style to Lightly and dialogues to XDG Desktop Portal. For fonts and icons, choose ```Noto Sans 12``` and ```Papirus-Dark```. If running with issues with dolphin, go to the style sheets tab and enable ```dolphin-fix.qss```. Similar procedure for QT6 apps, just run qt6ct instead of qt5ct
+
+## Theme switcher
+In order for the theme switcher to work, ```python-pywal``` and ```python-haishoku``` are needed. To theme Firefox, install ```python-pywalfox``` and install it by adding the extension and running ```pywalfox install```. You may also need to perform some tweaking so the colors look right.
+
+Finally, for catppuccin support, install ```catppuccin-gtk-theme-mocha``` and ```catppuccin-cursors-mocha```

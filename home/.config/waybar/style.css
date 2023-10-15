@@ -186,7 +186,7 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: @color8;
+	color: @background;
 	background: @color13;
 }
 #cpu {
@@ -197,7 +197,7 @@ tooltip {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: @color8;
+	color: @background;
 	background: @color14;
 }
 
@@ -262,8 +262,8 @@ tooltip {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: @color8;
-	background: @color13;
+	color: @foreground;
+	background: @color1;
 }
 
 #custom-media {
