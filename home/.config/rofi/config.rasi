@@ -1,27 +1,17 @@
 /*Dracula theme based on the Purple official rofi theme*/
+@import "~/.cache/wal/colors-rofi-dark"
 
 * {
     font: "Jetbrains Mono Nerd Font SemiBold 12";
-    foreground: #f8f8f2;
-    background-color: #282a36;
-    active-background: #6272a4;
-    urgent-background: #ff5555;
-    urgent-foreground: #282a36;
-    selected-background: @active-background;
-    selected-urgent-background: @urgent-background;
-    selected-active-background: @active-background;
-    separatorcolor: @active-background;
-    bordercolor: @active-background;
 }
 
 configuration {
-    modes:                      [drun,emoji,combi];
+    modes:                      [drun,combi];
     modi:                       "drun";
     display-combi:              "";
-    display-emoji:              "Emojis ";
     show-icons:                 true;
     icon-theme:                 "Papirus-Dark";
-    application-fallback-icon:  "Dracula";
+    application-fallback-icon:  "Adwaita";
     display-drun:               "";
     disable-history:            false;
 }
@@ -51,7 +41,7 @@ entry {
     padding:      1px;
 }
 #textbox {
-    text-color: @foreground;
+    text-color: @active-foreground;
 }
 #listview {
     fixed-height: 0;
@@ -75,11 +65,11 @@ entry {
 }
 #element.normal.active {
     background-color: @active-background;
-    text-color:       @foreground;
+    text-color:       @active-foreground;
 }
 #element.selected.normal {
     background-color: @selected-background;
-    text-color:       @foreground;
+    text-color:       @selected-foreground;
 }
 #element.selected.urgent {
     background-color: @selected-urgent-background;
