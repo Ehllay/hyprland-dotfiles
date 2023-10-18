@@ -1,1 +1,3 @@
 cat-waves -> https://github.com/zhichaoh/catppuccin-wallpapers/blob/main/waves/cat-waves.png 
+
+romb -> https://github.com/zhichaoh/catppuccin-wallpapers/blob/main/minimalistic/romb.png
