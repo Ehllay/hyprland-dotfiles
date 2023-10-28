@@ -16,6 +16,9 @@ elif grep -q Mocha $state_file; then
   gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Mocha-Standard-Lavender-Dark'
   gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Lavender-Cursors'
 
+elif grep -q Wallpaper $state_file; then
+  gsettings set org.gnome.desktop.interface cursor-theme 'McMojave-cursors'
+  hyprctl setcursor McMojave-cursors 24
 fi
 
 killall waybar

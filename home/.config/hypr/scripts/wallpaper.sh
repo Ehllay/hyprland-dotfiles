@@ -46,7 +46,7 @@ set_wallpaper() {
       wal -i $wallpaper --saturate 0.75 --backend haishoku 
       ~/.config/hypr/scripts/applytheme.sh
     fi
-    swww img $wallpaper --transition-type wipe --transition-fps 120
+    swww img $wallpaper --transition-type wipe --transition-fps 90
 }
 
 # Call the set_wallpaper function with a random wallpaper

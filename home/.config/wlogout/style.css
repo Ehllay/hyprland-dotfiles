@@ -1,4 +1,4 @@
-@import url("./colors.css");
+@import url("../../.cache/wal/colors-waybar.css");
 window {
     font-family: Noto Sans;
     font-size: 14pt;
@@ -15,7 +15,7 @@ button {
     background-color: transparent;
     background-size: 20%;
     box-shadow: none;
-    color: @text; /* text */
+    color: @foreground; /* text */
     text-shadow: none;
       animation: gradient_f 20s ease-in infinite;
     margin: 5px;
@@ -31,8 +31,8 @@ button:hover {
 
 button:focus {
     background-size: 25%;
-    background-color: @purple;
-    color: @surface1;
+    background-color: @color4;
+    color: @color0;
 }
 
 #lock {
