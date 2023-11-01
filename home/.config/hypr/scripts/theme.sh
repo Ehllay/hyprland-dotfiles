@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo -en "\0prompt\x1fThemes \n"
+
 theme_state="$HOME/.local/state/theme_state.txt"
 script_dir="$HOME/.config/hypr/scripts"
 
@@ -19,7 +21,7 @@ elif [ x"$@" = x"Catppuccin Mocha" ]; then
   killall rofi
   exit 0
 
-elif [ x"$@" = x"Wallpaper" ]; then
+elif [ x"$@" = x"Wallpaper (Pywal)" ]; then
   echo "Wallpaper" > $theme_state
   $script_dir/wallpaper.sh
 
@@ -29,5 +31,5 @@ fi
 
 echo "Dracula"
 echo "Catppuccin Mocha"
-echo "Wallpaper"
+echo "Wallpaper (Pywal)"
 
