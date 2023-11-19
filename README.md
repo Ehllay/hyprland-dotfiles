@@ -3,7 +3,7 @@ My Hyprland configuration for my Desktop with NVIDIA
 
 ## Packages (needs an AUR helper to install, like yay or paru)
 ```
-hyprland-nvidia kitty papirus-icon-theme brightnessctl pipewire dracula-theme doplhin qt5ct qt6ct lightly-qt polkit-kde-agent libappindicator-gtk3 noto-fonts noto-fonts-cjk noto-fonts-emoji dunst swaylock-effects wlogout xdg-desktop-portal-hyprland rofi-lbonn-wayland-git rofi-emoji waybar swww hyprpicker cliphist ttf-jetbrainsmono-nerd starship cava pfetch-rs-bin python python-pywal python-haishoku fish
+hyprland-nvidia kitty papirus-icon-theme brightnessctl pipewire dracula-theme doplhin qt5ct qt6ct lightly-qt polkit-kde-agent libappindicator-gtk3 noto-fonts noto-fonts-cjk noto-fonts-emoji swaync swaylock-effects wlogout xdg-desktop-portal-hyprland rofi-lbonn-wayland-git rofi-emoji waybar swww hyprpicker cliphist ttf-jetbrainsmono-nerd starship cava pfetch-rs-bin python python-pywal python-haishoku fish
 ```
 ## Screenshot
 ![Dracula](/screenshots/dracula.png)

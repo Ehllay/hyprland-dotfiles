@@ -25,7 +25,7 @@ window#waybar.hidden {
 
 tooltip {
     background: @background;
-    border-radius: 10px;
+    border-radius: 8px;
     border-width: 2px;
     border-style: solid;
     border-color: @color4;
@@ -75,57 +75,50 @@ tooltip {
     background: @background;
     color: @color6;
 }
-#workspaces {
-  margin-top: 6px;
+
+#workspaces,
+#network,
+#pulseaudio,
+#battery,
+#backlight,
+#clock,
+#memory,
+#cpu,
+#tray,
+#window,
+#custom-launcher,
+#custom-power,
+#custom-updates,
+#custom-media {
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 10px;
+  margin-top: 6px;
+	border-radius: 8px;
   border-bottom-width: 2px;
-  border-bottom-color: @color0;
   border-bottom-style: solid;
-
-  background: @background;
+  border-bottom-color: @color0;
+	background: @background;
 }
 
 #network {
-	margin-top: 6px;
 	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 10px;
 	transition: none;
 	color: @color14;
-	background: @background;
 }
 
 #pulseaudio {
-	margin-top: 6px;
 	margin-left: 8px;
   margin-right: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 10px 0 0 10px;
-  border-bottom-width: 2px;
-  border-bottom-color: @color0;
-  border-bottom-style: solid;
+	border-radius: 8px 0 0 8px;
 
 	transition: none;
 	color: @color5;
-	background: @background;
 }
 
 #battery {
-	margin-top: 6px;
 	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 10px;
 	transition: none;
 	color: @color6;
-	background: @background;
 }
 
 #battery.charging, #battery.plugged {
@@ -151,128 +144,75 @@ tooltip {
 }
 
 #backlight {
-	margin-top: 6px;
 	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 7px;
-	margin-bottom: 0px;
-	border-radius: 10px 0 0 10px;
+	border-radius: 8px 0 0 8px;
 	transition: none;
 	color: @color11;
-	background: @background;
 }
 #clock {
-	margin-top: 6px;
 	margin-left: 0px;
   margin-right: 10px;
-	padding-left: 8px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 0 10px 10px 0;
-  border-bottom-width: 2px;
-  border-bottom-color: @color0;
-  border-bottom-style: solid;
+	border-radius: 0 8px 8px 0;
 
 	transition: none;
 	color: @color2;
-	background: @background;
 }
 
 #memory {
-	margin-top: 6px;
 	margin-left: 8px;
-	padding-left: 10px;
-	margin-bottom: 0px;
-	padding-right: 10px;
-	border-radius: 10px;
 	transition: none;
 	color: @background;
 	background: @color13;
+  border-bottom-style: hidden;
 }
 #cpu {
-	margin-top: 6px;
 	margin-left: 8px;
-	padding-left: 10px;
-	margin-bottom: 0px;
-	padding-right: 10px;
-	border-radius: 10px;
 	transition: none;
 	color: @background;
 	background: @color14;
+  border-bottom-style: hidden;
 }
 
 #tray {
-	margin-top: 6px;
 	margin-left: 8px;
-	padding-left: 10px;
-	margin-bottom: 0px;
-	padding-right: 10px;
-	border-radius: 10px;
-  border-bottom-width: 2px;
-  border-bottom-color: @color0;
-  border-bottom-style: solid;
-
 	transition: none;
 	color: @color4;
-	background: @background;
 }
 
 #window {
-    border-radius: 10px;
     margin-left: 60px;
     margin-right: 60px;
 }
 
 #custom-launcher {
 	font-size: 24px;
-	margin-top: 6px;
 	margin-left: 10px;
   margin-right: 8px;
-	padding-left: 10px;
 	padding-right: 5px;
-	border-radius: 10px;
-  border-bottom-width: 2px;
-  border-bottom-color: @color0;
-  border-bottom-style: solid;
 
 	transition: none;
-    color: @color4;
-    background: @background;
+  color: @color4;
 }
 
 #custom-power {
 	font-size: 15px;
-	margin-top: 6px;
 	margin-left: 8px;
 	margin-right: 8px;
-	padding-left: 10px;
 	padding-right: 5px;
-	margin-bottom: 0px;
-	border-radius: 10px;
 	transition: none;
 	color: @color8;
 	background: @color12;
 }
 
 #custom-updates {
-	margin-top: 6px;
 	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 10px;
 	transition: none;
 	color: @foreground;
 	background: @color1;
 }
 
 #custom-media {
-	margin-top: 6px;
 	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 10px;
 	transition: none;
 	color: @color8;
 	background: @color10;
