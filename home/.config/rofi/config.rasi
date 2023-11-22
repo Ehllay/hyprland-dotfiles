@@ -2,7 +2,7 @@
 @import "~/.cache/wal/colors-rofi-dark"
 
 * {
-    font: "Jetbrains Mono Nerd Font SemiBold 12";
+    font: "JetBrainsMono NF SemiBold 12";
 }
 
 configuration {

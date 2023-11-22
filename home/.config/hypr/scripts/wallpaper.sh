@@ -43,7 +43,7 @@ get_random_wallpaper() {
 set_wallpaper() {
     local wallpaper="$1"
     if grep -q Wallpaper ~/.local/state/theme_state.txt; then
-      wal -i $wallpaper --saturate 0.75 --backend haishoku -n 
+      wal -n -i $wallpaper --saturate 0.75 --backend haishoku -n 
       ~/.config/hypr/scripts/applytheme.sh
     fi
     swww img $wallpaper --transition-type wipe --transition-fps 45 
