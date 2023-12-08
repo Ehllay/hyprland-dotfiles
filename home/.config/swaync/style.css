@@ -81,6 +81,7 @@
 
 .close-button:hover {
   box-shadow: none;
+  color: @noti-close-bg;
   background: @noti-close-bg-hover;
   transition: all 0.15s ease-in-out;
   border: none;
@@ -92,7 +93,7 @@
   margin: 0;
   box-shadow: none;
   background: @noti-bg;
-  border: 1px solid @noti-border-color;
+  border: 2px solid @noti-border-color;
   color: @text-color;
   transition: all 0.15s ease-in-out;
 }
@@ -254,6 +255,7 @@
 .widget-dnd > switch slider {
   background: @color4;
   border-radius: 12px;
+  transition-delay: 0.05s;
 }
 .widget-dnd > switch:checked slider {
   background: @color0;

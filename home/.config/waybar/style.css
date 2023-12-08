@@ -3,7 +3,7 @@
 * {
 	border: none;
 	border-radius: 0;
-    font-family: "JetbrainsMono Nerd Font", monospace;
+    font-family: "JetbrainsMono NF", monospace;
   font-weight: bold;
 	font-size: 14px;
 	min-height: 0;
@@ -25,7 +25,6 @@ window#waybar.hidden {
 
 tooltip {
     background: @background;
-    border-radius: 8px;
     border-width: 2px;
     border-style: solid;
     border-color: @color4;
@@ -189,10 +188,10 @@ tooltip {
 	margin-left: 10px;
   margin-right: 8px;
 	padding-right: 5px;
-
-	transition: none;
   color: @color4;
+
 }
+
 
 #custom-power {
 	font-size: 15px;

@@ -18,23 +18,23 @@ button {
     box-shadow: none;
     color: @foreground; /* text */
     text-shadow: none;
-      animation: gradient_f 20s ease-in infinite;
+    animation: gradient_f 20s ease-in infinite;
     margin: 5px;
-    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in-out;
 }
 
 button:hover {
   color: @color4;
   background-color: @background;
-  animation: gradient_f 20s ease-in infinite;
   transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
 
 }
 
 button:focus {
-    background-size: 25%;
-    background-color: @color4;
-    color: @color0;
+  background-size: 25%;
+  background-color: @color4;
+  color: @color0;
+  transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
 }
 
 #lock {

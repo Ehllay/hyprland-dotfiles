@@ -11,7 +11,7 @@
     "custom/launcher", 
     "hyprland/workspaces",
     //"custom/power",
-    "custom/media", 
+    //"custom/media", 
     "custom/updates", 
     "tray"
   ],
@@ -107,13 +107,12 @@
             "default": " "
         },
         "escape": true,
-        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
         "on-click": "playerctl play-pause"
     },
     "custom/launcher":{
+        "tooltip": false,
         "format": " ",
-        "on-click": "rofi -combi-modi drun,window,filebrowser,run -show combi",
-        "on-click-right": "killall rofi"
+        "on-click": "rofi -combi-modi drun,window,filebrowser,run -show combi"
     },
     "custom/power":{
         "format": " ",
@@ -124,6 +123,6 @@
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 15,
-        "on-click": "kitty -e yay && notify-send 'The system has been updated' "
+        "on-click": "kitty -e paru && notify-send -i /usr/share/icons/Papirus-Dark/16x16/actions/system-upgrade.svg 'The system has been upgraded'"
     }
 }
