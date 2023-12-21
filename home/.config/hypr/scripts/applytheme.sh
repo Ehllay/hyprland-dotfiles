@@ -16,7 +16,7 @@ elif grep -q Mocha $state_file; then
   gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Mocha-Standard-Lavender-Dark'
   gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Lavender-Cursors'
 
-elif grep -q Wallpaper $state_file; then
+elif grep -q Pywal $state_file; then
   gsettings set org.gnome.desktop.interface cursor-theme 'Bibata'
   hyprctl setcursor Bibata 24
 fi

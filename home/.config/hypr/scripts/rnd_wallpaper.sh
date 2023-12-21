@@ -11,7 +11,7 @@ elif grep -q Mocha $theme_state; then
   wallpaper_dir="$HOME/Pictures/wallpapers/Mocha"
 
 else 
-  wallpaper_dir="$HOME/Pictures/wallpapers/Other"
+  wallpaper_dir="$HOME/Pictures/wallpapers/Pywal"
 fi
 
 
@@ -39,17 +39,7 @@ get_random_wallpaper() {
     done
 }
 
-# Function to set the wallpaper
-set_wallpaper() {
-    local wallpaper="$1"
-    if grep -q Wallpaper ~/.local/state/theme_state.txt; then
-      wal -n -t -q -i $wallpaper --saturate 0.75 --backend haishoku
-      ~/.config/hypr/scripts/applytheme.sh
-    fi
-    swww img $wallpaper --transition-type wipe --transition-fps 90
-}
-
-# Call the set_wallpaper function with a random wallpaper
+# Call the set_wallpaper script with a random wallpaper
 random_wallpaper=$(get_random_wallpaper)
-set_wallpaper "$random_wallpaper"
-
+echo $random_wallpaper
+~/.config/hypr/scripts/set_wallpaper.sh $random_wallpaper
