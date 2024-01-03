@@ -24,7 +24,7 @@
     "network",
     "backlight",
     "pulseaudio",
-    //"pulseaudio#microphone",
+    "pulseaudio#microphone",
     "clock",
     "battery"
   ],
@@ -36,7 +36,8 @@
 		"format-muted": "󰖁 {volume}%",
 		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"format-icons": {
-			"default": ["", "", ""]
+			"default": ["", "", ""],
+      "headphone": ["󰋋"]
 		}
 	},
   "pulseaudio#microphone": {
@@ -44,9 +45,9 @@
     "format-source": " {volume}%",
     "format-source-muted": " {volume}%",
     "on-click": "pamixer --default-source -t",
-    "on-scroll-up": "pamixer --default-source -i 5",
-    "on-scroll-down": "pamixer --default-source -d 5",
-      "scroll-step": 5
+    "on-scroll-up": "pamixer --default-source -i 2",
+    "on-scroll-down": "pamixer --default-source -d 2",
+      "scroll-step": 2
     },
 
   "hyprland/window": {
@@ -68,9 +69,10 @@
   "network": {
 		"tooltip": true,
 		"format-wifi": "  {signalStrength}",
-		"format-ethernet": "",
+		"format-ethernet": "󰈀 ",
     "format-disconnected": "󰖪 ",
-    "tooltip-format": "{essid}, 󰕒 {bandwidthUpBytes}, 󰇚 {bandwidthDownBytes}"
+    "tooltip-format": "{essid}, 󰕒 {bandwidthUpBytes}, 󰇚 {bandwidthDownBytes}",
+    "on-click": "nm-connection-editor"
 	},
 	"backlight": {
 		"tooltip": false,
@@ -136,6 +138,6 @@
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 15,
-        "on-click": "kitty -e yay && notify-send -i /usr/share/icons/Papirus-Dark/16x16/actions/package.svg 'The system has been upgraded' "
+        "on-click": "kitty -e paru && notify-send -i /usr/share/icons/Papirus-Dark/16x16/actions/package.svg 'The system has been upgraded' "
     }
 }
