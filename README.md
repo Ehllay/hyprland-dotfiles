@@ -3,7 +3,7 @@ My Hyprland configuration
 
 ## Packages (needs an AUR helper to install, like yay or paru)
 ```
-paru hyprland kitty papirus-icon-theme brightnessctl pipewire dracula-theme thunar thunar-volman qt5ct polkit-kde-agent libappindicator-gtk3 swaync swaylock-effects wlogout xdg-desktop-portal-hyprland rofi-lbonn-wayland-git waybar nm-connection-editor swww hyprpicker cliphist ttf-jetbrainsmono-nerd starship cava pfetch python python-pywal python-haishoku fish bat lsd
+paru hyprland kitty papirus-icon-theme brightnessctl pipewire dracula-theme thunar thunar-volman qt5ct polkit-kde-agent libappindicator-gtk3 swaync hyprlock hypridle wlogout xdg-desktop-portal-hyprland rofi-lbonn-wayland-git waybar nm-connection-editor swww hyprpicker cliphist ttf-jetbrainsmono-nerd starship cava pfetch python python-pywal python-haishoku fish bat lsd
 ```
 
 
