@@ -98,7 +98,8 @@
 		"spacing": 10
 	},
     "clock": {
-        "format": "{: %R}",
+        "interval": 60,
+        "format": " {:%H:%M}",
         "tooltip-format": "{:%c}"
     },
     "cpu": {
