@@ -7,18 +7,18 @@ if grep -q Dracula $state_file; then
   wal -n --theme dracula 
   gsettings set org.gnome.desktop.interface gtk-theme 'Dracula'
   gsettings set org.gnome.desktop.interface cursor-theme 'Dracula-cursors'
-  hyprctl setcursor Dracula-cursors 24
+  hyprctl setcursor Dracula 24
 
 
 elif grep -q Mocha $state_file; then
   wal -n --theme catppuccin_mocha
   gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Mocha-Standard-Lavender-Dark'
-  gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Lavender-Cursors'
-  hyprctl setcursor Catppuccin-Mocha-Lavender-Cursors 24
+  #gsettings set org.gnome.desktop.interface cursor-theme 'Catppuccin-Mocha-Lavender-Cursors'
+  #hyprctl setcursor Catppuccin-Mocha-Lavender-Cursors 24
 
 elif grep -q Wallpaper $state_file; then
   gsettings set org.gnome.desktop.interface cursor-theme 'Bibata'
-  hyprctl setcursor Bibata 24
+  hyprctl setcursor Bibata-Modern-Classic 24
 fi
 
 killall waybar
