@@ -3,7 +3,7 @@ My Hyprland configuration
 
 ## Packages (needs an AUR helper to install, like yay or paru)
 ```
-paru hyprland kitty papirus-icon-theme brightnessctl pipewire dracula-theme thunar thunar-volman qt5ct polkit-kde-agent libappindicator-gtk3 swaync hyprlock hypridle wlogout xdg-desktop-portal-hyprland rofi-lbonn-wayland-git waybar nm-connection-editor swww hyprpicker swappy grim slurp cliphist ttf-jetbrainsmono-nerd starship cava pfetch python python-pywal python-haishoku fish bat lsd
+paru hyprland kitty papirus-icon-theme brightnessctl pipewire dracula-theme dolphin qt5ct polkit-kde-agent libappindicator-gtk3 swaync hyprlock hypridle wlogout xdg-desktop-portal-hyprland rofi-lbonn-wayland-git waybar nm-connection-editor swww hyprpicker swappy grim slurp cliphist ttf-jetbrainsmono-nerd starship cava pfetch python python-pywal python-haishoku fish bat lsd
 ```
 
 
@@ -19,8 +19,6 @@ For QT5, if the custom theme isn't working, open qt5ct and set the color scheme 
 
 ## Theme switcher
 In order for the theme switcher to work, ```python-pywal``` and ```python-haishoku``` are needed. To theme Firefox, install ```python-pywalfox``` and install it by adding the extension and running ```pywalfox install```. You may also need to perform some tweaking so the colors look right. Also, Wallpaper mode uses [McMojave Cursors](https://github.com/vinceliuice/McMojave-cursors), so go to their repo and download it from there
-
-Finally, for catppuccin support, install ```catppuccin-gtk-theme-mocha``` and ```catppuccin-cursors-mocha```
 
 ## Support for additional stuff.
 For mic support, install ```pamixer``` and uncomment the ```pulseaudio#microphone``` line in ```~/.config/waybar/config.jsonc```. Otherwise just remove the binds for microphone volume control, but it isn't necessary
